@@ -4,7 +4,7 @@
 [build]
   ignore = "git diff --name-only HEAD^ HEAD | grep -v '^assets/' | wc -l | grep -q '^0$'"
   publish = "_site"
-  command = "eleventy && [ -d _site/preview/admin ] && mv _site/preview/admin/* _site/ && rm -rf _site/preview/admin 2>/dev/null || true"
+  command = "eleventy && [ -d _site/preview/admin ] && mv _site/preview/admin/* _site/ && rm -rf _site/preview/admin 2>/dev/null"
 
 # Cache generated content between builds (e.g. images)
 # https://github.com/jakejarvis/netlify-plugin-cache
