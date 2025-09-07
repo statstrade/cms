@@ -14,6 +14,16 @@ package = "netlify-plugin-cache"
   [plugins.inputs]
   paths = [ ".cache" ]
 
+[[redirects]]
+  from = "/"
+  to = "/admin/"
+  status = 200
+
+[[redirects]]
+  from = "/preview/*"
+  to = "/preview/:splat"
+  status = 200
+
 # Be aware that if you have conflicting configuration values, settings specified in
 # netlify.toml override any corresponding settings in the Netlify UI.
 
