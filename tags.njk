@@ -17,8 +17,6 @@ eleventyComputed:
   description: "All posts from the Blog tagged with “{{ tag }}”"
 ---
 
-<h1>{{ title }}</h1>
-
 {% set postsList = collections[tag] %}
 {% include "components/postsList.njk" %}
 
