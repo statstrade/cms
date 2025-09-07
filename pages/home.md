@@ -1,11 +1,11 @@
 ---
-layout: layouts/page.njk
-title: Welcome to Statstrade
-date: 2025-09-08T08:49:00
+layout: layouts/blog.njk
+title: Blog
+description: All Blog Posts
+date: 2017-01-01
 permalink: /
 eleventyNavigation:
-  key: home
-  title: Home
-  order: 0
+  key: blog
+  title: Blog
+  order: 1
 ---
-Welcome to Statstrade
