@@ -7,8 +7,8 @@
 
 # Logo and favicon configuration
 site_url: https://www.statstrade.io  # Your site URL
-logo_url: /assets/img/logo-preview.png    # Path to your logo (relative to the site root)
-favicon_url: /assets/img/favicon-96x96.png  # Path to your favicon
+logo_url: https://r2.statstrade.io/assets/icons/ms-icon-310x310.png   # Path to your logo (relative to the site root)
+favicon_url: https://r2.statstrade.io/assets/icons/favicon-96x96.png  # Path to your favicon
 
 
 # Enter your GitHub repo path and branch (defaults to master)
