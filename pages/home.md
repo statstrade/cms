@@ -1,6 +1,8 @@
 ---
+layout: layouts/page.njk
 title: Welcome to Statstrade
 date: 2025-09-08T08:49:00
+permalink: /
 eleventyNavigation:
   key: home
   title: Home
