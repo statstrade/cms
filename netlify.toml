@@ -2,7 +2,7 @@
 
 # Output directory and 11ty build command
 [build]
-  ignore = "git diff --quiet HEAD^ HEAD -- . :^assets/"
+  ignore = "git diff --name-only HEAD^ HEAD | grep -v '^assets/' | wc -l | grep -q '^0$'"
   publish = "_site"
   command = "eleventy && [ -d _site/preview/admin ] && mv _site/preview/admin/* _site/ && rm -rf _site/preview/admin 2>/dev/null || true"
 
