@@ -1,11 +1,11 @@
 ---
 layout: layouts/blog.njk
-title: Blog
+title: Preview
 description: All Blog Posts
 date: 2017-01-01
 permalink: /
 eleventyNavigation:
-  key: blog
-  title: Blog
-  order: 1
+  key: preview
+  title: Preview
+  order: 0
 ---
