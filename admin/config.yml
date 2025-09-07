@@ -5,9 +5,12 @@
 # Decap CMS docs: https://decapcms.org/docs/intro/
 # Sveltia CMS docs: https://github.com/sveltia/sveltia-cms#features
 
-# Logo and favicon configuration
+# Site configuration
 site_url: https://www.statstrade.io  # Your site URL
-logo_url: https://r2.statstrade.io/assets/icons/ms-icon-310x310.png   # Path to your logo (relative to the site root)
+site_name: Statstrade CMS  # Custom site name for the CMS interface
+
+# Logo and favicon configuration
+logo_url: https://r2.statstrade.io/assets/icons/ms-icon-310x.png   # Path to your logo (relative to the site root)
 favicon_url: https://r2.statstrade.io/assets/icons/favicon-96x96.png  # Path to your favicon
 
 
