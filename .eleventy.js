@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
     
     let metadata = await Image(src, {
       widths: [500, 1000, "auto"],
-      formats: ["avif", "jpeg", "png", "webp", "ico"],
+      formats: ["avif", "jpeg"],
       urlPath: "/assets/img/",
       outputDir: "./_site/assets/img/"
     });
