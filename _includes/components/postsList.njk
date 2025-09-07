@@ -7,7 +7,8 @@
 			<a href="{{ post.url | url }}">
 
 				{% if post.data.image %}
-					<img src="{{ addPrefix post.data.image }}" alt="{{ post.data.imageAltText or post.data.title }}" loading="lazy">
+					{% set imageUrl %}{% addPrefix post.data.image %}{% endset %}
+					<img src="{{ imageUrl }}" alt="{{ post.data.imageAltText or post.data.title }}" loading="lazy">
 				{% endif %}
 
 				<h3>{{ post.data.title }}</h3>
