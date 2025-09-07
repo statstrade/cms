@@ -1,11 +1,8 @@
 # Netlify Build Configuration
 
-# Ignore builds when only assets change
-[build]
-  ignore = "git diff --quiet HEAD^ HEAD -- . :^assets/"
-
 # Output directory and 11ty build command
 [build]
+  ignore = "git diff --quiet HEAD^ HEAD -- . :^assets/"
   publish = "_site"
   command = "eleventy && [ -d _site/preview/admin ] && mv _site/preview/admin/* _site/ && rm -rf _site/preview/admin 2>/dev/null || true"
 
