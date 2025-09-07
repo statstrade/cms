@@ -19,7 +19,7 @@ backend:
 
 # The folder used to store uploaded images
 media_folder: "assets/images"
-public_folder: "https://r2.statstrade.io/assets/images" 
+public_folder: "/preview/assets/images" 
 
 # The CMS collections and their fields
 collections:
