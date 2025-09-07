@@ -1,7 +1,3 @@
-{% if postsList.length >= 1 %}
-	<p>{{ postsList.length }} {{ "post" | pluralize(postsList.length) }}</p>
-{% endif %}
-
 <section>
 
 	{% for post in postsList | reverse %}
