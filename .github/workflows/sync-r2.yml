@@ -42,7 +42,7 @@ jobs:
       - name: Sync assets to Cloudflare R2
         run: |
           mkdir -p temp_assets
-          cp -r assets/* temp_assets/
+          cp -r assets/img/* temp_assets/
           aws s3 sync \
             --endpoint-url https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com \
             --delete \
