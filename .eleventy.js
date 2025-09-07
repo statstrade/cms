@@ -6,27 +6,19 @@ const yaml = require("js-yaml");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const Image = require("@11ty/eleventy-img");
 
+
 module.exports = function(eleventyConfig) {
 
   // https://www.11ty.dev/docs/plugins/image/
-  eleventyConfig.addShortcode("generateImage", async function(src, alt, sizes) {
-    
-    let metadata = await Image(src, {
-      widths: [500, 1000, "auto"],
-      formats: ["avif", "jpeg"],
-      urlPath: "/assets/img/",
-      outputDir: "./_site/assets/img/"
-    });
-
-    let imageAttributes = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-    };
-    
-    return Image.generateHTML(metadata, imageAttributes);
-  
+  eleventyConfig.addShortcode("addPrefix", 
+    function processImageUrl(src) {
+      if (!src) return '';
+      // If it's already an absolute URL, return as is
+      if (src.startsWith('http')) {
+        return src;
+      }
+      // Otherwise, prepend the R2 domain and clean up any double slashes
+      return `https://r2.statstrade.io/${src.replace(/^\/+/, '')}`;
   });
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
