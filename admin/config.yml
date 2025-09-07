@@ -6,8 +6,8 @@
 # Sveltia CMS docs: https://github.com/sveltia/sveltia-cms#features
 
 # Site configuration
-site_url: https://www.statstrade.io  # Your site URL
-site_name: Statstrade CMS  # Custom site name for the CMS interface
+site_url: https://r2.statstrade.io  # Your site URL
+site_name: Statstrade - Content Management  # Custom site name for the CMS interface
 
 # Logo and favicon configuration
 logo_url: https://r2.statstrade.io/assets/icons/ms-icon-310x310.png   # Path to your logo (relative to the site root)
@@ -22,7 +22,7 @@ backend:
 
 # The folder used to store uploaded images
 media_folder: "assets/images"
-public_folder: "/preview/assets/images" 
+public_folder: "/assets/images" 
 
 # The CMS collections and their fields
 collections:
