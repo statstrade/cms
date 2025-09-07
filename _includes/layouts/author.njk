@@ -6,7 +6,7 @@ permalink: "authors/{{ name | slug }}/"
 <h1>{{ name }}</h1>
 
 {% if image %}
-  <img src="{{ addPrefix image }}" alt="{{ name }}" style="max-width: 100%; height: auto;">
+  <img src="{{ addPrefix(image) }}" alt="{{ name }}" style="max-width: 100%; height: auto;">
 {% endif %}
 
 {{ layoutContent | safe }}

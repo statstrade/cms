@@ -32,7 +32,7 @@ section: post
   </p>
 
   {% if image %}
-    <img src="{{ addPrefix image }}" alt="{{ imageAltText or title }}" style="max-width: 100%; height: auto; display: block; margin: 1em 0;">
+    <img src="{{ addPrefix(image) }}" alt="{{ imageAltText or title }}" style="max-width: 100%; height: auto; display: block; margin: 1em 0;">
   {% endif %}
 
   {{ layoutContent | safe }}
