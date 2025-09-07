@@ -10,7 +10,7 @@ site_url: https://www.statstrade.io  # Your site URL
 site_name: Statstrade CMS  # Custom site name for the CMS interface
 
 # Logo and favicon configuration
-logo_url: https://r2.statstrade.io/assets/icons/ms-icon-310x.png   # Path to your logo (relative to the site root)
+logo_url: https://r2.statstrade.io/assets/icons/ms-icon-310x310.png   # Path to your logo (relative to the site root)
 favicon_url: https://r2.statstrade.io/assets/icons/favicon-96x96.png  # Path to your favicon
 
 
