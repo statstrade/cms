@@ -7,7 +7,7 @@
 			<a href="{{ post.url | url }}">
 
 				{% if post.data.image %}
-					{% generateImage post.data.image, (post.data.imageAltText or post.data.title), "90vw" %}
+					{% post.data.image, (post.data.imageAltText or post.data.title), "90vw" %}
 				{% endif %}
 
 				<h3>{{ post.data.title }}</h3>
