@@ -109,7 +109,7 @@ module.exports = function(eleventyConfig) {
 
   return {
     templateFormats: ["md", "njk", "liquid"],
-    pathPrefix: "/",
+    pathPrefix: "/preview",
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
@@ -117,7 +117,7 @@ module.exports = function(eleventyConfig) {
       input: ".",
       includes: "_includes",
       data: "_data",
-      output: "_site/preview"   // 👈 output into /preview
+      output: "_site/preview"
     }
   };
 };
