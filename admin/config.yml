@@ -18,7 +18,7 @@ backend:
   branch: master
 
 # The folder used to store uploaded images
-media_folder: "assets/img"
+media_folder: "assets/images"
 public_folder: "https://r2.statstrade.io/assets/images" 
 
 # The CMS collections and their fields

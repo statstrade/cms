@@ -5,7 +5,8 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'assets/**'
+      - 'assets/images/**'
+      - 'posts/**'
 
 jobs:
   r2-sync:
@@ -39,16 +40,24 @@ jobs:
             signature_version = s3v4
           EOF
 
-      - name: Sync assets to Cloudflare R2
+      - name: Sync assets to R2
         run: |
-          mkdir -p temp_assets
-          cp -r assets/img/* temp_assets/
           aws s3 sync \
             --endpoint-url https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com \
             --delete \
             --acl public-read \
             --cache-control "public, max-age=31536000" \
-            temp_assets/ \
+            assets/images \
             s3://general/assets/images
+
+      - name: Sync posts to R2
+        run: |
+          aws s3 sync \
+            --endpoint-url https://$R2_ACCOUNT_ID.r2.cloudflarestorage.com \
+            --delete \
+            --acl public-read \
+            --cache-control "public, max-age=31536000" \
+            posts \
+            s3://general/assets/posts
           rm -rf temp_assets
         
