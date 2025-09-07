@@ -3,7 +3,7 @@
 # Output directory and 11ty build command
 [build]
   publish = "_site"
-  command = "eleventy && [ -d _site/admin ] && mv _site/preview/admin/* _site/ 2>/dev/null || true"
+  command = "eleventy && [ -d _site/preview/admin ] && mv _site/preview/admin/* _site/ 2>/dev/null || true"
 
 # Cache generated content between builds (e.g. images)
 # https://github.com/jakejarvis/netlify-plugin-cache
