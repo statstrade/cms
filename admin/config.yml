@@ -5,9 +5,10 @@
 # Decap CMS docs: https://decapcms.org/docs/intro/
 # Sveltia CMS docs: https://github.com/sveltia/sveltia-cms#features
 
-# Logo configuration
-site_url: https://www.statstrade.com  # Your site URL
+# Logo and favicon configuration
+site_url: https://www.statstrade.io  # Your site URL
 logo_url: /assets/img/logo-preview.png    # Path to your logo (relative to the site root)
+favicon_url: /assets/img/favicon-96x96.png  # Path to your favicon
 
 
 # Enter your GitHub repo path and branch (defaults to master)
