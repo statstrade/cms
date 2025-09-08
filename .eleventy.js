@@ -10,15 +10,20 @@ const Image = require("@11ty/eleventy-img");
 module.exports = function(eleventyConfig) {
 
   // https://www.11ty.dev/docs/plugins/image/
-  eleventyConfig.addShortcode("addPrefix", 
-    function (src) {
+  eleventyConfig.addFilter("addPrefix", 
+    async function (src) {
       if (!src) return '';
       // If it's already an absolute URL, return as is
       if (src.startsWith('http')) {
         return src;
       }
-      // Otherwise, prepend the R2 domain and clean up any double slashes
       return `https://r2.statstrade.io/${src.replace(/^\/+/, '')}`;
+  });  
+  
+  eleventyConfig.addFilter("DEBUG", 
+    function (src) {
+      console.log("DEBUG", src)
+      return src;
   });
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
