@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
 
   // https://www.11ty.dev/docs/plugins/image/
   eleventyConfig.addShortcode("addPrefix", 
-    function processImageUrl(src) {
+    function (src) {
       if (!src) return '';
       // If it's already an absolute URL, return as is
       if (src.startsWith('http')) {
